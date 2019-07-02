@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_view_gradient">
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--ESTO VA A CAMBIARSE POR UN IFRAME PRONTAMENTE-->
+
+            <ImageView
+                android:id="@+id/imagen_detalles"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/colorPrimaryDark"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/ic_play_circle_outline_black_24dp"
+
+                />
+            <TextView
+                android:id="@+id/nombre_pelicula_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/centurygothic"
+                android:gravity="start"
+                android:text="John Wick"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imagen_detalles" />
+
+            <TextView
+                android:id="@+id/fecha_de_estreno_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/centurygothic"
+                android:gravity="center|bottom"
+                android:text="1965"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imagen_detalles" />
+
+            <TextView
+                android:id="@+id/duracion_pelicula_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+
+                android:fontFamily="@font/centurygothic"
+                android:text="2h 15m"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nombre_pelicula_detalles" />
+
+            <TextView
+                android:id="@+id/puntuacion_pelicula_detalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/centurygothic"
+                android:text="9.6"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fecha_de_estreno_detalles" />
+
+            <TextView
+                android:id="@+id/id_unica_pelicula_detalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/centurygothic"
+                android:text="1549874"
+                android:textSize="18sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fecha_de_estreno_detalles" />
+
+            <TextView
+                android:id="@+id/descripcion_pelicula_detalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_outline"
+                android:fontFamily="@font/centurygothic"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="Una descripcion randomizada que va a funcar para cualquier pelicula que se te ocurra amigacho, aguanteee malafama. A puro ritmo y sustancia, arriba la vagancia amiguerooo!!!"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/puntuacion_pelicula_detalles" />
+
+            <TextView
+                android:id="@+id/generos_pelicula_detalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_outline"
+                android:fontFamily="@font/centurygothic"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Terror, Comedia, Ciencia Ficcion"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/descripcion_pelicula_detalles"
+
+
+                />
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/linear_layout_pelicula_detalles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/generos_pelicula_detalles">
+
+                <TextView
+                    android:id="@+id/director_pelicula_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/centurygothic"
+                    android:text="Danny Devito"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/elenco_text_view_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/centurygothic"
+
+                    android:text="Elencto"
+                    android:textSize="16dp" />
+                <!--ESTO VA A CAMBIARSE POR UN IFRAME PRONTAMENTE
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/elenco_recycler_view_detalles_pelicula"
+                    android:orientation="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+                -->
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
+

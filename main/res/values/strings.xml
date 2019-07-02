@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ProyectoIntegradorADAPTER</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terror">Horror</string>
+    <string name="cienciaFiccion">Science Fiction</string>
+    <string name="drama">Drama</string>
+    <string name="thriller"></string>
+    <string name="comedia">Comedy</string>
+    <string name="accion">Action</string>
+    <string name="aventura">Adventure</string>
+    <string name="animacion">Animation</string>
+    <string name="documental">Documentary</string>
+    <string name="familiar">Family</string>
+    <string name="fantasia">Fantasy</string>
+    <string name="historica">History</string>
+    <string name="musical">Music</string>
+    <string name="misterio">Mystery</string>
+    <string name="romantica">Romance</string>
+    <string name="guerra">War</string>
+    <string name="western">Western</string>
+
+</resources>

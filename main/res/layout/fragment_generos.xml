@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.FragmentGeneros"
+    >
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E7B72D"
+        android:id="@+id/fragment_generos_listo"
+        android:text="Listo"
+        android:fontFamily="@font/centurygothic"
+        android:textColor="#030303"
+        android:textSize="30dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+
+        />
+
+</FrameLayout>

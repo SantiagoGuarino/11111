@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryYellow">#FECB00</color>
+    <color name="colorPrimaryDark">#1A1A1A</color>
+    <color name="colorAccent">#424242</color>
+    <color name="colorPastelYellow">#AF901A</color>
+    <color name="amarilloCineView">#E7B72D</color>
+
+</resources>
